@@ -19,7 +19,7 @@ brews:
     directory: Formula
     homepage: "https://github.com/razahuss02/vaultx"
     install: |
-      bin.install "{{ .ArtifactName }}" => "vaultx"
+      bin.install "vaultx"
     repository:
       owner: razahuss02
       name: vaultx
