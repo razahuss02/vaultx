@@ -5,23 +5,23 @@
 class Vaultx < Formula
   desc ""
   homepage "https://github.com/razahuss02/vaultx"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/razahuss02/vaultx/releases/download/v1.0.0/vaultx_1.0.0_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e2c4f98fce87bbee67bc17e13e0c750c654ba7b22436e2735334982be7dd1621"
+      url "https://github.com/razahuss02/vaultx/releases/download/v1.0.1/vaultx_1.0.1_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "bb469deaac82e0546e23bb8dd5c5d433c66c43ace87379fcc8dc71f8a205441b"
 
       def install
-        bin.install "vaultx_1.0.0_darwin_amd64.tar.gz" => "vaultx"
+        bin.install "vaultx"
       end
     end
     on_arm do
-      url "https://github.com/razahuss02/vaultx/releases/download/v1.0.0/vaultx_1.0.0_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "520835c5e93aae2c66c6572eba5a3eafd6557b52ea4b3e7e94fe9e36bf041b83"
+      url "https://github.com/razahuss02/vaultx/releases/download/v1.0.1/vaultx_1.0.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d976890778add41f991c77cdbc4cac71784340eb0e9a6c55f1137fdfbd2537d6"
 
       def install
-        bin.install "vaultx_1.0.0_darwin_arm64.tar.gz" => "vaultx"
+        bin.install "vaultx"
       end
     end
   end
@@ -29,21 +29,21 @@ class Vaultx < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/razahuss02/vaultx/releases/download/v1.0.0/vaultx_1.0.0_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "61ec66cf1fff90b2934dbb9b9dc5db8fd6ba2fb2f9151e8f7892f12ab8672107"
+        url "https://github.com/razahuss02/vaultx/releases/download/v1.0.1/vaultx_1.0.1_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "9449919f4e55ac8ba863017180ccb688d7bf0c2ef60d0da9b57bc2e0352eb95a"
 
         def install
-          bin.install "vaultx_1.0.0_linux_amd64.tar.gz" => "vaultx"
+          bin.install "vaultx"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/razahuss02/vaultx/releases/download/v1.0.0/vaultx_1.0.0_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "3931378c10302b7e6e78590756e4ade5c3bda16cca02ffb18c36b192c8591802"
+        url "https://github.com/razahuss02/vaultx/releases/download/v1.0.1/vaultx_1.0.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "014253f54bce90b84c9479c347a59495aa584e24d9bddafebf84fe2eb5eac383"
 
         def install
-          bin.install "vaultx_1.0.0_linux_arm64.tar.gz" => "vaultx"
+          bin.install "vaultx"
         end
       end
     end
